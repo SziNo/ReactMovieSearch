@@ -1,7 +1,7 @@
-import React, { useState, useContext } from 'react'
+import { useState, useContext, createContext } from 'react'
 import useFetch from './useFetch'
 
-const AppContext = React.createContext()
+const AppContext = createContext()
 
 export const AppProvider = ({ children }) => {
   const [query, setQuery] = useState('lord of the rings')
