@@ -1,6 +1,6 @@
 # Technology used:
 
-ReactJS(Router 6), CSS
+ReactJS with Router 6, CSS, Git.
 
 # Deployed on Netlify
 
