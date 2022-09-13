@@ -1,6 +1,6 @@
 # Technology used:
 
-ReactJS with Router 6, CSS, Git.
+ReactJS with Router 6,useContext for state management and a custom fetch hook, CSS, Git.
 
 # Deployed on Netlify
 
