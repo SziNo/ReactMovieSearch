@@ -5,7 +5,7 @@ const AppContext = createContext()
 
 export const AppProvider = ({ children }) => {
   const [query, setQuery] = useState('lord of the rings')
-  const { isLoading, error, data: movies } = useFetch(`&s=${query}`)
+  const { isLoading, error, data: movies } = useFetch(query)
 
   return (
     <AppContext.Provider value={{ isLoading, error, movies, query, setQuery }}>
