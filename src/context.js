@@ -3,7 +3,7 @@ import useFetch from './useFetch'
 
 const AppContext = React.createContext()
 
-const AppProvider = ({ children }) => {
+export const AppProvider = ({ children }) => {
   const [query, setQuery] = useState('lord of the rings')
   const { isLoading, error, data: movies } = useFetch(`&s=${query}`)
 
@@ -14,8 +14,4 @@ const AppProvider = ({ children }) => {
   )
 }
 
-export const useGlobalContext = () => {
-  return useContext(AppContext)
-}
-
-export { AppContext, AppProvider }
+export const useGlobalContext = () => useContext(AppContext)
